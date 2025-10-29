@@ -1747,7 +1747,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     debug: "env",
     cdn: {"js":{"app":"/js/app.js","parallax":"/js/plugins/parallax.js","rightMenu":"/js/plugins/rightMenu.js","rightMenus":"/js/plugins/rightMenus.js","sites":"/js/plugins/tags/sites.js","friends":"/js/plugins/tags/friends.js","contributors":"/js/plugins/tags/contributors.js","search":"/js/search/hexo.js"},"css":{"style":"/css/style.css"}},
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1761716946481),
+    lastupdate: new Date(1761717073336),
     sidebar: {
       for_page: ["blogger","category","tagcloud","donate"],
       for_post: ["toc"],
@@ -2208,13 +2208,13 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
             
               <li>
                 <a class="menuitem flat-box faa-parent animated-hover"
-                href="/" title="undefined"
+                href="/" title="博客"
                   
                   
                   
                     active-action="action-home"
                   >
-                  <i class='home fa-fw'></i>
+                  <i class='fa-solid fa-rss fa-fw'></i>博客
                 </a>
                 
               </li>
@@ -2225,13 +2225,47 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
             
               <li>
                 <a class="menuitem flat-box faa-parent animated-hover"
-                href="/archives/" title="undefined"
+                href="/categories/" title="分类"
+                  
+                  
+                  
+                    active-action="action-categories"
+                  >
+                  <i class='fa-solid fa-folder-open fa-fw'></i>分类
+                </a>
+                
+              </li>
+            
+          
+          
+            
+            
+              <li>
+                <a class="menuitem flat-box faa-parent animated-hover"
+                href="/tags/" title="标签"
+                  
+                  
+                  
+                    active-action="action-tags"
+                  >
+                  <i class='fa-solid fa-tags fa-fw'></i>标签
+                </a>
+                
+              </li>
+            
+          
+          
+            
+            
+              <li>
+                <a class="menuitem flat-box faa-parent animated-hover"
+                href="/archives/" title="归档"
                   
                   
                   
                     active-action="action-archives"
                   >
-                  <i class='archive fa-fw'></i>
+                  <i class='fa-solid fa-archive fa-fw'></i>归档
                 </a>
                 
               </li>
@@ -2242,13 +2276,13 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
             
               <li>
                 <a class="menuitem flat-box faa-parent animated-hover"
-                href="/research/" title="undefined"
+                href="/friends/" title="友链"
                   
                   
                   
-                    active-action="action-research"
+                    active-action="action-friends"
                   >
-                  <i class='flask fa-fw'></i>
+                  <i class='fa-solid fa-link fa-fw'></i>友链
                 </a>
                 
               </li>
@@ -2259,62 +2293,13 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
             
               <li>
                 <a class="menuitem flat-box faa-parent animated-hover"
-                href="/about/" title="undefined"
+                href="/about/" title="关于"
                   
                   
                   
                     active-action="action-about"
                   >
-                  <i class='user fa-fw'></i>
-                </a>
-                
-              </li>
-            
-          
-          
-            
-            
-              <li>
-                <a class="menuitem flat-box faa-parent animated-hover"
-                href="/cv/" title="undefined"
-                  
-                  
-                  
-                    active-action="action-cv"
-                  >
-                  <i class='file-text fa-fw'></i>
-                </a>
-                
-              </li>
-            
-          
-          
-            
-            
-              <li>
-                <a class="menuitem flat-box faa-parent animated-hover"
-                href="/contact/" title="undefined"
-                  
-                  
-                  
-                    active-action="action-contact"
-                  >
-                  <i class='mail fa-fw'></i>
-                </a>
-                
-              </li>
-            
-          
-          
-            
-            
-              <li>
-                <a class="menuitem flat-box faa-parent animated-hover"
-                 href="/" onclick="return false;" title="undefined"
-                  
-                  
-                  >
-                  <i class='globe fa-fw'></i>
+                  <i class='fa-solid fa-info-circle fa-fw'></i>关于
                 </a>
                 
               </li>
@@ -2344,13 +2329,13 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
             
               <li>
                 <a class="menuitem flat-box faa-parent animated-hover"
-                href="/" title="undefined"
+                href="/" title="博客"
                   
                   
                   
                     active-action="action-home"
                   >
-                  <i class='home fa-fw'></i>
+                  <i class='fa-solid fa-rss fa-fw'></i>博客
                 </a>
                 
               </li>
@@ -2361,13 +2346,47 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
             
               <li>
                 <a class="menuitem flat-box faa-parent animated-hover"
-                href="/archives/" title="undefined"
+                href="/categories/" title="分类"
+                  
+                  
+                  
+                    active-action="action-categories"
+                  >
+                  <i class='fa-solid fa-folder-open fa-fw'></i>分类
+                </a>
+                
+              </li>
+            
+          
+            
+              
+            
+              <li>
+                <a class="menuitem flat-box faa-parent animated-hover"
+                href="/tags/" title="标签"
+                  
+                  
+                  
+                    active-action="action-tags"
+                  >
+                  <i class='fa-solid fa-tags fa-fw'></i>标签
+                </a>
+                
+              </li>
+            
+          
+            
+              
+            
+              <li>
+                <a class="menuitem flat-box faa-parent animated-hover"
+                href="/archives/" title="归档"
                   
                   
                   
                     active-action="action-archives"
                   >
-                  <i class='archive fa-fw'></i>
+                  <i class='fa-solid fa-archive fa-fw'></i>归档
                 </a>
                 
               </li>
@@ -2378,13 +2397,13 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
             
               <li>
                 <a class="menuitem flat-box faa-parent animated-hover"
-                href="/research/" title="undefined"
+                href="/friends/" title="友链"
                   
                   
                   
-                    active-action="action-research"
+                    active-action="action-friends"
                   >
-                  <i class='flask fa-fw'></i>
+                  <i class='fa-solid fa-link fa-fw'></i>友链
                 </a>
                 
               </li>
@@ -2395,62 +2414,13 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
             
               <li>
                 <a class="menuitem flat-box faa-parent animated-hover"
-                href="/about/" title="undefined"
+                href="/about/" title="关于"
                   
                   
                   
                     active-action="action-about"
                   >
-                  <i class='user fa-fw'></i>
-                </a>
-                
-              </li>
-            
-          
-            
-              
-            
-              <li>
-                <a class="menuitem flat-box faa-parent animated-hover"
-                href="/cv/" title="undefined"
-                  
-                  
-                  
-                    active-action="action-cv"
-                  >
-                  <i class='file-text fa-fw'></i>
-                </a>
-                
-              </li>
-            
-          
-            
-              
-            
-              <li>
-                <a class="menuitem flat-box faa-parent animated-hover"
-                href="/contact/" title="undefined"
-                  
-                  
-                  
-                    active-action="action-contact"
-                  >
-                  <i class='mail fa-fw'></i>
-                </a>
-                
-              </li>
-            
-          
-            
-              
-            
-              <li>
-                <a class="menuitem flat-box faa-parent animated-hover"
-                 href="/" onclick="return false;" title="undefined"
-                  
-                  
-                  >
-                  <i class='globe fa-fw'></i>
+                  <i class='fa-solid fa-info-circle fa-fw'></i>关于
                 </a>
                 
               </li>
@@ -2482,7 +2452,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   <div class='top'>
     
     
-      <p class="title">My blog</p>
+      <p class="title">Volantis</p>
     
     
   </div>
@@ -2524,6 +2494,13 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
               
               active-action="action-archives">
               <img src='https://unpkg.com/volantis-static@0.0.1654736714924/media/twemoji/assets/svg/1f4f0.svg'><p>博客</p>
+            </a>
+          
+            <a target="_blank" rel="noopener" href="https://github.com/volantis-x/hexo-theme-volantis/"
+              
+              
+              active-action="action-https:githubcomvolantis-xhexo-theme-volantis">
+              <img src='https://unpkg.com/volantis-static@0.0.1654736714924/media/twemoji/assets/svg/1f9ec.svg'><p>源码</p>
             </a>
           
         
@@ -2740,7 +2717,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <span hidden>
       <meta itemprop="discussionUrl" content="/2025/10/29/PINN/#comments">
     </span>
-    <p ct><i class='fa-solid fa-comments'></i> 评论 / Comments</p>
+    <p ct><i class='fa-solid fa-comments'></i> 评论</p>
     
 
     <div id="layoutHelper-comments"></div>
@@ -2895,7 +2872,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     
       
         <div class='copyright'>
-        <p><a href="/">Copyright © since 2025</a></p>
+        <p><a href="/">Copyright © since 2017 XXX</a></p>
 
         </div>
       
@@ -3045,7 +3022,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   function pjax_giscus() {
     const HEAD = check_giscus();
     if (!HEAD) return;
-    let cfg = Object.assign({"theme":{"light":"light","dark":"dark"},"repo":"Yu-Xiang-Yang/blog-comments","repo-id":"R_kgDOQLMikw","category":"Announcements","category-id":"DIC_kwDOQLMik84CxM4A","mapping":"pathname","reactions-enabled":"1","emit-metadata":"0","lang":"zh-CN"},pdata.commentConfig)
+    let cfg = Object.assign({"theme":{"light":"light","dark":"dark"}},pdata.commentConfig)
     const script = document.createElement('script');
     script.setAttribute('src', 'https://giscus.app/client.js');
     Object.keys(cfg).forEach(k=>{
