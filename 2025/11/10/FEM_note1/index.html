@@ -5,8 +5,8 @@
   <meta name="Volantis" content="5.8.1">
   <meta charset="utf-8">
   <!-- SEO相关 -->
-  <meta name="robots" content="noindex,follow">
-  <link rel="canonical" href="https://yuxiangyang.cn/archives/2025/"/>
+  
+  <link rel="canonical" href="https://yuxiangyang.cn/2025/11/10/fem_note1/"/>
   <!-- 渲染优化 -->
     <meta http-equiv='x-dns-prefetch-control' content='on' />
       <link rel='dns-prefetch' href='https://unpkg.com'>
@@ -35,23 +35,22 @@
   <!-- feed -->
       <link rel="alternate" href="/atom.xml" title="余翔洋的个人主页" type="application/atom+xml">
   <!-- 页面元数据 -->
-  <title>归档：2025 - 余翔洋的个人主页</title>
-  <meta name="keywords" content="岩土工程,物理信息神经网络,PINN,数值计算,机器学习">
-  <meta desc name="description" content="分享我在岩土计算与AI融合方向的研究与思考 - 余翔洋(Young) - 余翔洋的个人主页">
+  <title>有限元学习笔记01 - 余翔洋的个人主页</title>
+  <meta name="keywords" content="FEM,数值分析,岩土工程,物理信息神经网络,PINN,数值计算,机器学习">
+  <meta desc name="description" content="因为PINN的学习需要，所以重新捡起了有限元的学习。 - 余翔洋(Young) - 余翔洋的个人主页">
   
-<meta property="og:type" content="website">
-<meta property="og:title" content="余翔洋的个人主页">
-<meta property="og:url" content="https://yuxiangyang.cn/archives/2025/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="有限元学习笔记01">
+<meta property="og:url" content="https://yuxiangyang.cn/2025/11/10/FEM_note1/">
 <meta property="og:site_name" content="余翔洋的个人主页">
-<meta property="og:description" content="分享我在岩土计算与AI融合方向的研究与思考">
+<meta property="og:description" content="因为PINN的学习需要，所以重新捡起了有限元的学习。">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
+<meta property="article:published_time" content="2025-11-10T02:00:00.000Z">
+<meta property="article:modified_time" content="2025-11-10T12:57:25.554Z">
 <meta property="article:author" content="余翔洋(Young)">
-<meta property="article:tag" content="PINN">
-<meta property="article:tag" content="岩土工程">
-<meta property="article:tag" content="数值计算">
-<meta property="article:tag" content="机器学习">
-<meta property="article:tag" content="物理信息神经网络">
+<meta property="article:tag" content="FEM">
+<meta property="article:tag" content="数值分析">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
   <style>
@@ -2347,7 +2346,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <!-- Custom Files bodyBegin end-->
     <!-- front-matter body_begin begin -->
     <!-- front-matter body_begin end -->
-    <header itemscope itemtype="http://schema.org/WPHeader" id="l_header" class="l_header auto shadow floatable blur " style='opacity: 0' >
+    <header itemscope itemtype="http://schema.org/WPHeader" id="l_header" class="l_header auto shadow floatable blur show" style='opacity: 0' >
   <div class='container'>
   <div id='wrapper'>
     <div class='nav-sub'>
@@ -2670,7 +2669,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
     
       <!-- see: /layout/_partial/scripts/_ctrl/coverCtrl.ejs -->
-      <div id="half" class='cover-wrapper  dock' style="display: ;">
+      <div id="none" class='cover-wrapper post dock' style="display: none;">
         
   <div class='cover-bg lazyload placeholder' data-bg="/images/cover.png"></div>
 
@@ -2742,29 +2741,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         <div class="body-wrapper">
           
 <div id="l_main" class=''>
-	
-		
-  <section class="post-list">
-    
-      
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-      
-    
-    
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
+  <article itemscope itemtype="http://schema.org/Article" class="article post white-box reveal md shadow floatable blur article-type-post" id="post" itemscope itemprop="blogPost">
   <link itemprop="mainEntityOfPage" href="https://yuxiangyang.cn/2025/11/10/FEM_note1/">
   <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
     <meta itemprop="name" content="余翔洋的个人主页">
@@ -2774,382 +2751,269 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <meta itemprop="description" content="分享我在岩土计算与AI融合方向的研究与思考">
   </span>
   
-  
+
+
   
     <span hidden>
       <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
     </span>
   
-  
+  <div class="article-meta" id="top">
     
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2025/11/10/FEM_note1/"  itemprop="url">
+    
+    
+      <h1 class="title" itemprop="name headline">
         有限元学习笔记01
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      <p>因为PINN的学习需要，所以重新捡起了有限元的学习。</p>
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
+      </h1>
+      <div class='new-meta-box'>
         
-        <time itemprop="dateCreated datePublished" datetime="2025-11-10T10:00:00+08:00">2025-11-10</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/%E6%9C%89%E9%99%90%E5%85%83%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">有限元学习笔记</a>
           
-            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="/categories/%E6%9C%89%E9%99%90%E5%85%83%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" itemprop="url"><span itemprop="name">有限元学习笔记</span></a>
-            </span>
-          
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2025/11/10/FEM_note1/' itemprop="url">
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
-  
-
+            
+<div class='new-meta-item author' itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <a itemprop="url" class='author' href="/" rel="nofollow">
+    <img itemprop="image" src="/images/logo.png" class="lazyload" data-srcset="/images/logo.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+    <p itemprop="name">余翔洋（Young）</p>
+  </a>
 </div>
 
+          
+        
+          
+            
+  <div class='new-meta-item category'>
+    <i class="fa-solid fa-folder-open fa-fw" aria-hidden="true"></i>
+    <a class="category-link" href="/categories/%E6%9C%89%E9%99%90%E5%85%83%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">有限元学习笔记</a>
+    
+      <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
+        <a href="/categories/%E6%9C%89%E9%99%90%E5%85%83%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" itemprop="url"><span itemprop="name">有限元学习笔记</span></a>
+      </span>
+    
+  </div>
+
+
+          
+        
+          
+            <div class="new-meta-item date" itemprop="dateCreated datePublished" datetime="2025-11-10T10:00:00+08:00">
+  <a class='notlink'>
+    <i class="fa-solid fa-calendar-alt fa-fw" aria-hidden="true"></i>
+    <p>发布于：2025年11月10日</p>
+  </a>
+</div>
+
+          
+        
+          
+            
+
+
+<div class="new-meta-item browse">
+  <a class='notlink'>
+    <p>
+      <i class="fa-solid fa-eye fa-fw" aria-hidden="true"></i>
+      
+      <span id="lc-pv" data-title="有限元学习笔记01" data-path="/2025/11/10/FEM_note1/">
+        <span id='number'><i class="fa-solid fa-loader fa-spin fa-fw" aria-hidden="true"></i></span>
+      </span>
+      
+      <span>次浏览</span>
+    </p>
+  </a>
+</div>
+
+
+          
+        
+        <!-- Custom Files topMeta begin-->
+        
+        <!-- Custom Files topMeta end-->
+      </div>
+    
+  </div>
+
+
+  <div id="layoutHelper-page-plugins"></div>
+  <div id="post-body" itemprop="articleBody">
+    <p>因为PINN的学习需要，所以重新捡起了有限元的学习。</p>
+<span id="more"></span>
+
+  </div>
+  
+  
+    
+    <div class='footer'>
+       <!-- 参考资料、相关资料等 -->
+      
+       <!-- 相关文章 -->
+      
+      <!-- 版权声明组件 -->
+      
+        
+          
+          <div class="copyright license">
+            <div class="license-title">有限元学习笔记01</div>
+            <div class="license-link"><a href="https://yuxiangyang.cn/2025/11/10/FEM_note1/">https://yuxiangyang.cn/2025/11/10/FEM_note1/</a>
+            </div>
+            <div class="license-meta">
+              <div class="license-meta-item">
+                <div class="license-meta-title">本文作者</div>
+                <div class="license-meta-text">余翔洋（Young）</div>
+              </div>
+              <div class="license-meta-item">
+                <div class="license-meta-title">发布于</div>
+                <div class="license-meta-text">2025年11月10日</div>
+              </div>
+              
+              
+              <div class="license-meta-item">
+                <div class="license-meta-title">许可协议</div>
+                <div class="license-meta-text">允许规范转载</div>
+              </div>
+            </div>
+            <div class="license-statement">转载请保留本文转载地址，著作权归作者所有！</div>
           </div>
         
       
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="https://yuxiangyang.cn/2025/10/31/offline_env001/">
-  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="余翔洋的个人主页">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
-    <meta itemprop="name" content="余翔洋的个人主页">
-    <meta itemprop="description" content="分享我在岩土计算与AI融合方向的研究与思考">
-  </span>
-  
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-    </span>
-  
-  
-    
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2025/10/31/offline_env001/"  itemprop="url">
-        离线超算机器学习环境配置
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      <p>由于超算无法连接到网上环境，通过pip 或者conda 的直接下载包的方式失效。以下提供几种方式。主流的方式应该是在本地docker  创建一个镜像，直接在超算运行镜像环境，这种方法是运行环境最稳定的，缺点是docker的安装和学习 需要一些成本，同时docker hub的国内链接受到网络环境影响，很难下载镜像，在2024.11.7我曾试图在超算上下载image自己改环境，在下载到5gb大小的时候失败，应该是超算做了下载文件大小的限制（2025.3更新，可以通过使用终端命令来上传和下载文件，没有文件大小限制）。<br>本内容仅针对pytorch和JAX环境的超算使用和安装，tensorflow用户可以借鉴使用（因为tensorflow往往要cuda和tf版本一一对应，有些时候可能不是环境安装问题而是版本对应问题），其他大语言模型机器学习包（例如libcuda.so）可能对cuda的版本和cuda driver的版本有要求，请联系管理员更新cuda和cuda driver。</p>
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2025-10-31T00:20:00+08:00">2025-10-31</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/">环境配置</a>
-          
-            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="/categories/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/" itemprop="url"><span itemprop="name">环境配置</span></a>
-            </span>
-          
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2025/10/31/offline_env001/' itemprop="url">
-            阅读全文
-          </a>
-        </div>
+      <!-- 打赏组件 -->
       
     </div>
   
+  
+    
 
+
+  <div class='article-meta' id="bottom">
+    <div class='new-meta-box'>
+      
+        
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2025-11-10T20:57:25+08:00">
+  <a class='notlink'>
+    <i class="fa-solid fa-edit fa-fw" aria-hidden="true"></i>
+    <p>更新于：2025年11月10日</p>
+  </a>
 </div>
 
-          </div>
         
       
         
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="https://yuxiangyang.cn/2025/10/29/pinn001/">
-  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="余翔洋的个人主页">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
-    <meta itemprop="name" content="余翔洋的个人主页">
-    <meta itemprop="description" content="分享我在岩土计算与AI融合方向的研究与思考">
-  </span>
-  
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-    </span>
-  
-  
-    
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2025/10/29/pinn001/"  itemprop="url">
-        PINNs物理内嵌神经网络入门-1
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      <p>本篇字数约1600字，参考文献论文引用次数8845次，主要任务为介绍PINN的优势和PINN神经网络的结构组成与内部求导的理论实现。</p>
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2025-10-29T11:36:54+08:00">2025-10-29</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/%E6%95%B0%E5%80%BC%E8%AE%A1%E7%AE%97/">数值计算</a>
           
-            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="/categories/%E6%95%B0%E5%80%BC%E8%AE%A1%E7%AE%97/" itemprop="url"><span itemprop="name">数值计算</span></a>
-            </span>
+  
+  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/FEM/" rel="nofollow"><i class="fa-solid fa-hashtag fa-fw" aria-hidden="true"></i><p>FEM</p></a></div> <div class="new-meta-item meta-tags"><a class="tag" href="/tags/%E6%95%B0%E5%80%BC%E5%88%86%E6%9E%90/" rel="nofollow"><i class="fa-solid fa-hashtag fa-fw" aria-hidden="true"></i><p>数值分析</p></a></div>
+  <span hidden itemprop="keywords">FEM 数值分析</span>
+
+
+        
+      
+        
           
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2025/10/29/pinn001/' itemprop="url">
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="https://yuxiangyang.cn/2025/10/28/pinn-biot001/">
-  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="余翔洋的个人主页">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
-    <meta itemprop="name" content="余翔洋的个人主页">
-    <meta itemprop="description" content="分享我在岩土计算与AI融合方向的研究与思考">
-  </span>
-  
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-    </span>
-  
-  
-    
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2025/10/28/pinn-biot001/"  itemprop="url">
-        PINN 求解饱和土Biot固结
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
+  <div class="new-meta-item share -mob-share-list">
+  <div class="-mob-share-list share-body">
     
       
-        这里后面会写更学术一点的摘要、方程、数值策略等。
-
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2025-10-28T22:00:00+08:00">2025-10-28</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/%E7%A0%94%E7%A9%B6/">研究</a>
+        <a class="-mob-share-qq" title="" rel="external nofollow noopener noreferrer noopener"
           
-            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="/categories/%E7%A0%94%E7%A9%B6/" itemprop="url"><span itemprop="name">研究</span></a>
-            </span>
+          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://yuxiangyang.cn/2025/11/10/FEM_note1/&title=有限元学习笔记01 - 余翔洋的个人主页&summary=因为PINN的学习需要，所以重新捡起了有限元的学习。"
           
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2025/10/28/pinn-biot001/' itemprop="url">
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="https://yuxiangyang.cn/2025/10/28/fcn001/">
-  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="余翔洋的个人主页">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
-    <meta itemprop="name" content="余翔洋的个人主页">
-    <meta itemprop="description" content="分享我在岩土计算与AI融合方向的研究与思考">
-  </span>
-  
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-    </span>
-  
-  
-    
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2025/10/28/fcn001/"  itemprop="url">
-        全连接神经网络入门
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      <p>作为物理内嵌神经网络的预备知识和各种神经网络算法的鼻祖，学习全连接神经网络（Fully Connected Neural Network, FCNN）是非常有必要的。本篇文章将介绍全连接神经网络的基本结构、前向传播和反向传播算法，帮助读者理解神经网络的工作原理。</p>
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2025-10-28T01:36:54+08:00">2025-10-28</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/neural-network/">neural network</a>
+          >
           
-            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="/categories/neural-network/" itemprop="url"><span itemprop="name">neural network</span></a>
-            </span>
+            <img src="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/qq.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/qq.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
           
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2025/10/28/fcn001/' itemprop="url">
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-    
-  </section>
-  
-    
-  
-
-
-	
-</div>
-<aside id='l_side' itemscope itemtype="http://schema.org/WPSideBar">
-  
-
-  
-    
-    
-      
-<section class="widget blogger desktop mobile pjax">
-  <div class='content'>
-    
-      
-        <a class='avatar flat-box rectangle' href='/about/'>
-          <img no-lazy src='/images/avatar.jpg'/>
         </a>
       
     
+      
+        <a class="-mob-share-qzone" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://yuxiangyang.cn/2025/11/10/FEM_note1/&title=有限元学习笔记01 - 余翔洋的个人主页&summary=因为PINN的学习需要，所以重新捡起了有限元的学习。"
+          
+          >
+          
+            <img src="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/qzone.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/qzone.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+          
+        </a>
+      
     
-      <div class='text'>
-        
-        
-        
-          <p><span id="jinrishici-sentence">余翔洋的个人主页</span></p>
-          <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
-        
-      </div>
+      
+        <a class="-mob-share-weibo" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="http://service.weibo.com/share/share.php?url=https://yuxiangyang.cn/2025/11/10/FEM_note1/&title=有限元学习笔记01 - 余翔洋的个人主页&summary=因为PINN的学习需要，所以重新捡起了有限元的学习。"
+          
+          >
+          
+            <img src="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/weibo.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/weibo.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+          
+        </a>
+      
     
+      
     
-      <div class="social-wrapper">
-        
+      
+        <a class="-mob-share-telegram" title="" rel="external nofollow noopener noreferrer noopener"
           
-            <a href="/"
-              class="social fa-solid fa-house flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
+            target="_blank" href="https://t.me/share/url?url=https://yuxiangyang.cn/2025/11/10/FEM_note1/&text=有限元学习笔记01 - 余翔洋的个人主页"
           
-        
+          >
           
-            <a href="mailto:yuxy.study@gmail.com"
-              class="social fa-solid fa-envelope flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
+            <img src="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/telegram.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/telegram.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
           
-        
-          
-            <a href="https://github.com/Yu-Xiang-Yang/"
-              class="social fab fa-github flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-          
-            <a href="/about"
-              class="social fa-solid fa-address-card flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-      </div>
+        </a>
+      
     
   </div>
-</section>
+</div>
 
+
+
+        
+      
+    </div>
+    <!-- Custom Files bottomMeta begin -->
     
+    <!-- Custom Files bottomMeta end -->
+  </div>
+
+
+  
+  
+
+  
+    <div class="prev-next">
+      
+      
+        <a class='next' href='/2025/10/31/offline_env001/'>
+          <p class='title'>离线超算机器学习环境配置<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
+          <p class='content'>由于超算无法连接到网上环境，通过pip 或者conda 的直接下载包的方式失效。以下提供几种方式。主流的方式应该是在本地docker  创建一个镜像，直接在超算运行镜像环境，这种方法是运行环境最...</p>
+        </a>
+      
+    </div>
+  
+  <!-- Custom Files postEnd begin-->
+  
+  <!-- Custom Files postEnd end-->
+</article>
+
+
+  
+
+
+  <article class="post white-box shadow floatable blur" id="comments">
+    <span hidden>
+      <meta itemprop="discussionUrl" content="/2025/11/10/FEM_note1/#comments">
+    </span>
+    <p ct><i class='fa-solid fa-comments'></i> 评论</p>
+    
+
+    <div id="layoutHelper-comments"></div>
+
+  </article>
+
+
+
+
+
+
+</div>
+<aside id='l_side' itemscope itemtype="http://schema.org/WPSideBar">
   
 
   
@@ -3184,6 +3048,13 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   </section>
 
 
+    
+  
+
+  
+    
+    
+      
     
   
 
@@ -3255,93 +3126,35 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     
   
 
-  
-    
-    
-      
-  
-  <section class="widget category desktop pjax">
-    
-  <header>
-    
-      <a href='/blog/categories/'><i class="fa-solid fa-folder-open fa-fw" aria-hidden="true"></i><span class='name'>文章分类</span></a>
-    
-  </header>
-
-
-    <div class='content'>
-      <ul class="entry navigation">
-        
-          <li><a class="flat-box"
-            title="/categories/neural-network/" href="/categories/neural-network/"
-            active-action="action-categoriesneural-network"
-            ><div class='name'>neural network</div><div class='badge'>(1)</div></a></li>
-        
-          <li><a class="flat-box"
-            title="/categories/%E6%95%B0%E5%80%BC%E8%AE%A1%E7%AE%97/" href="/categories/%E6%95%B0%E5%80%BC%E8%AE%A1%E7%AE%97/"
-            active-action="action-categoriesE695B0E580BCE8AEA1E7AE97"
-            ><div class='name'>数值计算</div><div class='badge'>(1)</div></a></li>
-        
-          <li><a class="flat-box"
-            title="/categories/%E6%9C%89%E9%99%90%E5%85%83%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" href="/categories/%E6%9C%89%E9%99%90%E5%85%83%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"
-            active-action="action-categoriesE69C89E99990E58583E5ADA6E4B9A0E7AC94E8AEB0"
-            ><div class='name'>有限元学习笔记</div><div class='badge'>(1)</div></a></li>
-        
-          <li><a class="flat-box"
-            title="/categories/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/" href="/categories/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/"
-            active-action="action-categoriesE78EAFE5A283E9858DE7BDAE"
-            ><div class='name'>环境配置</div><div class='badge'>(1)</div></a></li>
-        
-          <li><a class="flat-box"
-            title="/categories/%E7%A0%94%E7%A9%B6/" href="/categories/%E7%A0%94%E7%A9%B6/"
-            active-action="action-categoriesE7A094E7A9B6"
-            ><div class='name'>研究</div><div class='badge'>(1)</div></a></li>
-        
-          <li><a class="flat-box"
-            title="/categories/%E9%A1%B9%E7%9B%AE/" href="/categories/%E9%A1%B9%E7%9B%AE/"
-            active-action="action-categoriesE9A1B9E79BAE"
-            ><div class='name'>项目</div><div class='badge'>(1)</div></a></li>
-        
-      </ul>
-    </div>
-  </section>
-
-
-    
-  
-
-  
-    
-    
-      
-  
-  <section class="widget tagcloud desktop mobile pjax">
-    
-  <header>
-    
-      <a href='/blog/tags/'><i class="fa-solid fa-tags fa-fw" aria-hidden="true"></i><span class='name'>热门标签</span></a>
-    
-  </header>
-
-
-    <div class='content'>
-      <a href="/tags/Biot/" style="font-size: 14px; color: #999">Biot</a> <a href="/tags/FEM/" style="font-size: 14px; color: #999">FEM</a> <a href="/tags/PINN/" style="font-size: 24px; color: #555">PINN</a> <a href="/tags/ansys/" style="font-size: 14px; color: #999">ansys</a> <a href="/tags/neural-network/" style="font-size: 24px; color: #555">neural network</a> <a href="/tags/%E5%A4%9A%E5%9C%BA%E8%80%A6%E5%90%88/" style="font-size: 14px; color: #999">多场耦合</a> <a href="/tags/%E5%B7%A5%E7%A8%8B%E9%A1%B9%E7%9B%AE/" style="font-size: 24px; color: #555">工程项目</a> <a href="/tags/%E6%95%B0%E5%80%BC%E5%88%86%E6%9E%90/" style="font-size: 14px; color: #999">数值分析</a> <a href="/tags/%E6%95%B0%E5%80%BC%E8%AE%A1%E7%AE%97/" style="font-size: 14px; color: #999">数值计算</a> <a href="/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/" style="font-size: 14px; color: #999">机器学习</a> <a href="/tags/%E6%A1%A5%E6%A2%81%E6%96%BD%E5%B7%A5%E6%A8%A1%E6%8B%9F/" style="font-size: 14px; color: #999">桥梁施工模拟</a>
-    </div>
-  </section>
-
-
-    
-  
-
-  
-
 
 <div class="widget-sticky pjax">
+
+  
+  
+
+
+  <div class="">
+    <!-- pjax占位 -->
+  </div>
+
+  
 
 </div>
 
 
 <!-- 没有 pjax 占位会报错 万恶的 pjax -->
+
+  <div class="pjax">
+    <!-- pjax占位 -->
+  </div>
+
+  <div class="pjax">
+    <!-- pjax占位 -->
+  </div>
+
+  <div class="pjax">
+    <!-- pjax占位 -->
+  </div>
 
   <div class="pjax">
     <!-- pjax占位 -->
@@ -3365,13 +3178,14 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 </aside>
 
 
+
           <!--此文件用来存放一些不方便取值的变量-->
 <!--思路大概是将值藏到重加载的区域内-->
 
 <pjax>
 <script>
   window.pdata={}
-  pdata.ispage=false;
+  pdata.ispage=true;
   pdata.commentPath="";
   pdata.commentPlaceholder="";
   pdata.commentConfig={};
@@ -3380,14 +3194,14 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     // header
     var l_header=document.getElementById("l_header");
     
-    l_header.classList.remove("show");
+    l_header.classList.add("show");
     
     
       // cover
       var cover_wrapper=document.querySelector('#l_cover .cover-wrapper');
       var scroll_down=document.getElementById('scroll-down');
-      cover_wrapper.id="half";
-      cover_wrapper.style.display="";
+      cover_wrapper.id="none";
+      cover_wrapper.style.display="none";
       scroll_down.style.display="none";
     
   
@@ -4614,7 +4428,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
 </script>
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"余翔洋的个人主页","url":"https://yuxiangyang.cn/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"余翔洋(Young)","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://yuxiangyang.cn/","sameAs":["https://github.com/volantis-x"],"description":"分享我在岩土计算与AI融合方向的研究与思考"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://yuxiangyang.cn/","name":"余翔洋的个人主页"}},{"@type":"ListItem","position":2,"item":{"@id":"https://yuxiangyang.cn/archives/","name":"Archive"}},{"@type":"ListItem","position":3,"item":{"@id":"https://yuxiangyang.cn/archives/2025/","name":"2025年"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"余翔洋的个人主页","url":"https://yuxiangyang.cn/","keywords":["岩土工程","物理信息神经网络","PINN","数值计算","机器学习"],"description":"分享我在岩土计算与AI融合方向的研究与思考","author":{"@type":"Person","name":"余翔洋(Young)","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://yuxiangyang.cn/","description":"分享我在岩土计算与AI融合方向的研究与思考"},"publisher":{"@type":"Organization","name":"余翔洋的个人主页","url":"https://yuxiangyang.cn/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://yuxiangyang.cn?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","description":"分享我在岩土计算与AI融合方向的研究与思考","inLanguage":["zh-CN","en","zh-TW","default"],"mainEntityOfPage":{"@type":"WebPage"},"author":{"@type":"Person","name":"余翔洋(Young)","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://yuxiangyang.cn/"},"publisher":{"@type":"Organization","name":"余翔洋的个人主页","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"wordCount":0,"image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"余翔洋的个人主页","url":"https://yuxiangyang.cn/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"余翔洋(Young)","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://yuxiangyang.cn/","sameAs":["https://github.com/volantis-x"],"description":"分享我在岩土计算与AI融合方向的研究与思考"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://yuxiangyang.cn/","name":"余翔洋的个人主页"}},{"@type":"ListItem","position":2,"item":{"@id":"https://yuxiangyang.cn/categories/有限元学习笔记/","name":"有限元学习笔记"}},{"@type":"ListItem","position":3,"item":{"@id":"https://yuxiangyang.cn/2025/11/10/FEM_note1/","name":"有限元学习笔记01"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"余翔洋的个人主页","url":"https://yuxiangyang.cn/","keywords":["岩土工程","物理信息神经网络","PINN","数值计算","机器学习"],"description":"分享我在岩土计算与AI融合方向的研究与思考","author":{"@type":"Person","name":"余翔洋(Young)","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://yuxiangyang.cn/","description":"分享我在岩土计算与AI融合方向的研究与思考"},"publisher":{"@type":"Organization","name":"余翔洋的个人主页","url":"https://yuxiangyang.cn/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://yuxiangyang.cn?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"有限元学习笔记01","description":"因为PINN的学习需要，所以重新捡起了有限元的学习。","inLanguage":["zh-CN","en","zh-TW","default"],"mainEntityOfPage":{"@type":"WebPage","@id":"https://yuxiangyang.cn/2025/11/10/FEM_note1/"},"author":{"@type":"Person","name":"余翔洋(Young)","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://yuxiangyang.cn/"},"publisher":{"@type":"Organization","name":"余翔洋的个人主页","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"https://yuxiangyang.cn/2025/11/10/FEM_note1/","wordCount":26,"datePublished":"2025-11-10T02:00:00.000Z","dateModified":"2025-11-10T12:57:25.554Z","articleSection":"有限元学习笔记","keywords":"FEM,数值分析","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
 
 
 
