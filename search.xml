@@ -74,9 +74,9 @@
       
         <tags>
             
-            <tag> neural network </tag>
-            
             <tag> PINN </tag>
+            
+            <tag> neural network </tag>
             
             <tag> 数值计算 </tag>
             
@@ -91,7 +91,7 @@
       <link href="/2025/10/28/pinn-biot001/"/>
       <url>/2025/10/28/pinn-biot001/</url>
       
-        <content type="html"><![CDATA[<p>这里后面会写更学术一点的摘要、方程、数值策略等。</p>]]></content>
+        <content type="html"><![CDATA[<p>这里后面会写更学术一点的摘要、方程、数值策略等。等待更新</p><span id="more"></span>]]></content>
       
       
       <categories>
