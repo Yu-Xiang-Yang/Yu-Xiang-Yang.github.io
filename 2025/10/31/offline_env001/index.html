@@ -47,7 +47,7 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
 <meta property="article:published_time" content="2025-10-30T16:20:00.000Z">
-<meta property="article:modified_time" content="2025-10-30T16:50:58.466Z">
+<meta property="article:modified_time" content="2025-11-11T07:15:21.059Z">
 <meta property="article:author" content="余翔洋(Young)">
 <meta property="article:tag" content="工程项目">
 <meta property="article:tag" content="机器学习">
@@ -1911,7 +1911,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     debug: "env",
     cdn: {"js":{"app":"/js/app.js","parallax":"/js/plugins/parallax.js","rightMenu":"/js/plugins/rightMenu.js","rightMenus":"/js/plugins/rightMenus.js","sites":"/js/plugins/tags/sites.js","friends":"/js/plugins/tags/friends.js","contributors":"/js/plugins/tags/contributors.js","search":"/js/search/hexo.js"},"css":{"style":"/css/style.css"}},
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1762830229835),
+    lastupdate: new Date(1762845703476),
     sidebar: {
       for_page: ["blogger","music","webinfo","category","tagcloud","donate"],
       for_post: ["music","toc","webinfo","category","tagcloud"],
@@ -2906,9 +2906,10 @@ Host gpu1<span class="token punctuation">(</span>任意自定义名<span class="
 <h2 id="2-slurm常用命令与使用方法"><a href="#2-slurm常用命令与使用方法" class="headerlink" title="2 slurm常用命令与使用方法"></a>2 slurm常用命令与使用方法</h2><p>查看集群分区与节点状态</p>
 <pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">sinfo<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
-<p>查看特定分区空闲节点<br>申请交互式计算节点</p>
+<p>查看特定分区空闲节点<br>申请交互式计算节点<br>此方法个人感觉为最佳方法</p>
 <pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">salloc <span class="token parameter variable">-p</span> <span class="token operator">&lt;</span>分区名<span class="token operator">></span> <span class="token parameter variable">-N</span> <span class="token operator">&lt;</span>节点数<span class="token operator">></span> <span class="token parameter variable">-n</span> <span class="token operator">&lt;</span>任务数<span class="token operator">></span> --cpus-per-task<span class="token operator">=</span><span class="token operator">&lt;</span>cpu数量<span class="token operator">></span> <span class="token parameter variable">--gres</span><span class="token operator">=</span><span class="token operator">&lt;</span>gpu数量<span class="token operator">></span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
+<p>下面这个为申请gpu节点的命令，申请一张gpu卡，同时保证关闭终端不会自动结束任务<br>（因为目前集群是免费的，太多人占卡了，占卡时长和你的电脑开机时间息息相关。。）<br>（使用此命令可以无限时长占卡）  </p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">salloc --no-kill <span class="token parameter variable">-p</span> gpu <span class="token parameter variable">--gres</span><span class="token operator">=</span>gpu:1  --job-name<span class="token operator">=</span>余翔洋  <span class="token operator">&amp;</span> disown<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p>ssh 进入节点</p>
 <pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">ssh</span> <span class="token operator">&lt;</span>账号名<span class="token operator">></span>@<span class="token operator">&lt;</span>节点名<span class="token operator">></span>
 <span class="token function">ssh</span> <span class="token operator">&lt;</span>节点名<span class="token operator">></span>   <span class="token comment"># 如果已经登录集群</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
@@ -2991,6 +2992,11 @@ python main.py
                 <div class="license-meta-text">2025年10月31日</div>
               </div>
               
+              <div class="license-meta-item">
+                <div class="license-meta-title">更新于</div>
+                <div class="license-meta-text">2025年11月11日</div>
+              </div>
+              
               
               <div class="license-meta-item">
                 <div class="license-meta-title">许可协议</div>
@@ -3013,10 +3019,10 @@ python main.py
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateModified" datetime="2025-10-31T00:50:58+08:00">
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2025-11-11T15:15:21+08:00">
   <a class='notlink'>
     <i class="fa-solid fa-edit fa-fw" aria-hidden="true"></i>
-    <p>更新于：2025年10月31日</p>
+    <p>更新于：2025年11月11日</p>
   </a>
 </div>
 
@@ -3227,7 +3233,7 @@ python main.py
       
         <div class="webinfo-item">
           <div>本站总字数：</div>
-          <div>1.6k 字</div>
+          <div>1.7k 字</div>
         </div>
       
 
@@ -4409,7 +4415,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
 </script>
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"余翔洋的个人主页","url":"https://yuxiangyang.cn/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"余翔洋(Young)","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://yuxiangyang.cn/","sameAs":["https://github.com/volantis-x"],"description":"分享我在岩土计算与AI融合方向的研究与思考"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://yuxiangyang.cn/","name":"余翔洋的个人主页"}},{"@type":"ListItem","position":2,"item":{"@id":"https://yuxiangyang.cn/categories/环境配置/","name":"环境配置"}},{"@type":"ListItem","position":3,"item":{"@id":"https://yuxiangyang.cn/2025/10/31/offline_env001/","name":"离线超算机器学习环境配置"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"余翔洋的个人主页","url":"https://yuxiangyang.cn/","keywords":["岩土工程","物理信息神经网络","PINN","数值计算","机器学习"],"description":"分享我在岩土计算与AI融合方向的研究与思考","author":{"@type":"Person","name":"余翔洋(Young)","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://yuxiangyang.cn/","description":"分享我在岩土计算与AI融合方向的研究与思考"},"publisher":{"@type":"Organization","name":"余翔洋的个人主页","url":"https://yuxiangyang.cn/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://yuxiangyang.cn?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"离线超算机器学习环境配置","description":"由于超算无法连接到网上环境，通过pip 或者conda 的直接下载包的方式失效。以下提供几种方式。主流的方式应该是在本地docker  创建一个镜像，直接在超算运行镜像环境，这种方法是运行环境最稳定的，缺点是docker的安装和学习 需要一些成本，同时docker hub的国内链接受到网络环境影响，很难下载镜像，在2024.11.7我曾试图在超算上下载image自己改环境，在下载到5gb大小的时候失败，应该是超算做了下载文件大小的限制（2025.3更新，可以通过使用终端命令来上传和下载文件，没有文件大小限制）。本内容仅针对pytorch和JAX环境的超算使用和安装，tensorflow用户可以借鉴使用（因为tensorflow往往要cuda和tf版本一一对应，有些时候可能不是环境安装问题而是版本对应问题），其他大语言模型机器学习包（例如libcuda.so）可能对cuda的版本和cuda driver的版本有要求，请联系管理员更新cuda和cuda driver。","inLanguage":["zh-CN","en","zh-TW","default"],"mainEntityOfPage":{"@type":"WebPage","@id":"https://yuxiangyang.cn/2025/10/31/offline_env001/"},"author":{"@type":"Person","name":"余翔洋(Young)","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://yuxiangyang.cn/"},"publisher":{"@type":"Organization","name":"余翔洋的个人主页","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"https://yuxiangyang.cn/2025/10/31/offline_env001/","wordCount":438,"datePublished":"2025-10-30T16:20:00.000Z","dateModified":"2025-10-30T16:50:58.466Z","articleSection":"环境配置","keywords":"工程项目,机器学习","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"余翔洋的个人主页","url":"https://yuxiangyang.cn/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"余翔洋(Young)","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://yuxiangyang.cn/","sameAs":["https://github.com/volantis-x"],"description":"分享我在岩土计算与AI融合方向的研究与思考"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://yuxiangyang.cn/","name":"余翔洋的个人主页"}},{"@type":"ListItem","position":2,"item":{"@id":"https://yuxiangyang.cn/categories/环境配置/","name":"环境配置"}},{"@type":"ListItem","position":3,"item":{"@id":"https://yuxiangyang.cn/2025/10/31/offline_env001/","name":"离线超算机器学习环境配置"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"余翔洋的个人主页","url":"https://yuxiangyang.cn/","keywords":["岩土工程","物理信息神经网络","PINN","数值计算","机器学习"],"description":"分享我在岩土计算与AI融合方向的研究与思考","author":{"@type":"Person","name":"余翔洋(Young)","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://yuxiangyang.cn/","description":"分享我在岩土计算与AI融合方向的研究与思考"},"publisher":{"@type":"Organization","name":"余翔洋的个人主页","url":"https://yuxiangyang.cn/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://yuxiangyang.cn?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"离线超算机器学习环境配置","description":"由于超算无法连接到网上环境，通过pip 或者conda 的直接下载包的方式失效。以下提供几种方式。主流的方式应该是在本地docker  创建一个镜像，直接在超算运行镜像环境，这种方法是运行环境最稳定的，缺点是docker的安装和学习 需要一些成本，同时docker hub的国内链接受到网络环境影响，很难下载镜像，在2024.11.7我曾试图在超算上下载image自己改环境，在下载到5gb大小的时候失败，应该是超算做了下载文件大小的限制（2025.3更新，可以通过使用终端命令来上传和下载文件，没有文件大小限制）。本内容仅针对pytorch和JAX环境的超算使用和安装，tensorflow用户可以借鉴使用（因为tensorflow往往要cuda和tf版本一一对应，有些时候可能不是环境安装问题而是版本对应问题），其他大语言模型机器学习包（例如libcuda.so）可能对cuda的版本和cuda driver的版本有要求，请联系管理员更新cuda和cuda driver。","inLanguage":["zh-CN","en","zh-TW","default"],"mainEntityOfPage":{"@type":"WebPage","@id":"https://yuxiangyang.cn/2025/10/31/offline_env001/"},"author":{"@type":"Person","name":"余翔洋(Young)","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://yuxiangyang.cn/"},"publisher":{"@type":"Organization","name":"余翔洋的个人主页","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"https://yuxiangyang.cn/2025/10/31/offline_env001/","wordCount":438,"datePublished":"2025-10-30T16:20:00.000Z","dateModified":"2025-11-11T07:15:21.059Z","articleSection":"环境配置","keywords":"工程项目,机器学习","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
 
 
 
