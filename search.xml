@@ -8,7 +8,7 @@
       <link href="/2025/11/10/FEM_note1/"/>
       <url>/2025/11/10/FEM_note1/</url>
       
-        <content type="html"><![CDATA[<p>因为PINN的学习需要，所以重新捡起了有限元的学习。</p><span id="more"></span>]]></content>
+        <content type="html"><![CDATA[<p>因为PINN的学习需要，所以重新捡起了有限元的学习。<br>在本章中我们介绍一种称为分段多项式的函数，用它来近似很多通用函数，并很容易在计算机软件中实现。<br>为了分段多项式近似，我们提出了两种技术：插值和L2投影。我们还证明了这些近似值的误差估计。</p><span id="more"></span><h2 id="分段多项式空间（Piecewise-Polynomial-Spaces）"><a href="#分段多项式空间（Piecewise-Polynomial-Spaces）" class="headerlink" title="分段多项式空间（Piecewise Polynomial Spaces）"></a>分段多项式空间（Piecewise Polynomial Spaces）</h2><h3 id="线性多项式空间（The-Space-of-Linear-Polynomials）"><a href="#线性多项式空间（The-Space-of-Linear-Polynomials）" class="headerlink" title="线性多项式空间（The Space of Linear Polynomials）"></a>线性多项式空间（The Space of Linear Polynomials）</h3><p>令$I&#x3D;[x_0,x_1]$是实轴上的一个区间，并令$P_1(I)$代表$I$上线性函数的向量空间，定义为：<br>$$<br>P_1(I)&#x3D;{v:v(x)&#x3D;c_0+c_1x,x\in I,c_0,c_1\in \mathbb{R}}.\tag{1.1}<br>$$<br>也就是说，$P_1(I)$包含了$I$上所有形式为$v(x)&#x3D;c_0+c_1x$的函数。  </p><p>可能$P_1(I)$ 最自然的基是单项式基底 ${1,x}$。因为$P_1(I)$中的任何函数$v$都可以表示为1和$x$的线性组合。也就是说，一个常数$c_0$乘1加上另一个常数$c_1$乘$x$，在这样做的过程中，$v$很清晰的被两个系数$c_0$和$c_1$（所谓的线性组合系数）所决定。事实上，我们称：<strong>$v$有两个自由度</strong></p>]]></content>
       
       
       <categories>
