@@ -45,7 +45,7 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png">
 <meta property="article:published_time" content="2025-11-10T02:00:00.000Z">
-<meta property="article:modified_time" content="2025-11-27T15:25:47.350Z">
+<meta property="article:modified_time" content="2025-11-27T15:28:00.472Z">
 <meta property="article:author" content="余翔洋(Young)">
 <meta property="article:tag" content="FEM">
 <meta property="article:tag" content="数值分析">
@@ -2282,7 +2282,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     root: '/',
     debug: "env",
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1764257153927),
+    lastupdate: new Date(1764265915675),
     cdn: {
       izitoast_css: 'https://unpkg.com/izitoast@1.4.0/dist/css/iziToast.min.css',
       izitoast_js: 'https://unpkg.com/izitoast@1.4.0/dist/js/iziToast.min.js',
@@ -2809,7 +2809,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <span id="more"></span>
 <h2 id="1-分段多项式空间（Piecewise-Polynomial-Spaces）"><a href="#1-分段多项式空间（Piecewise-Polynomial-Spaces）" class="headerlink" title="1.分段多项式空间（Piecewise Polynomial Spaces）"></a>1.分段多项式空间（Piecewise Polynomial Spaces）</h2><h3 id="1-1线性多项式空间（The-Space-of-Linear-Polynomials）"><a href="#1-1线性多项式空间（The-Space-of-Linear-Polynomials）" class="headerlink" title="1.1线性多项式空间（The Space of Linear Polynomials）"></a>1.1线性多项式空间（The Space of Linear Polynomials）</h3><p>令$I&#x3D;[x_0,x_1]$是实轴上的一个区间，并令$P_1(I)$代表$I$上线性函数的向量空间，定义为：<br>$$<br>P_1(I)&#x3D;{v:v(x)&#x3D;c_0+c_1x,x\in I,c_0,c_1\in \mathbb{R}}.\tag{1.1}<br>$$<br>也就是说，$P_1(I)$包含了$I$上所有形式为$v(x)&#x3D;c_0+c_1x$的函数。  </p>
 <p>可能$P_1(I)$ 最自然的基是单项式基底 ${1,x}$。因为$P_1(I)$中的任何函数$v$都可以表示为1和$x$的线性组合。也就是说，一个常数$c_0$乘1加上另一个常数$c_1$乘$x$，在这样做的过程中，$v$很清晰的被两个系数$c_0$和$c_1$（所谓的线性组合系数）所决定。事实上，我们称：<strong>$v$有两个自由度</strong></p>
-<h1 id="1-2-有限元法"><a href="#1-2-有限元法" class="headerlink" title="1.2 有限元法"></a>1.2 有限元法</h1><p>有限元法本质是一种用于解决偏微分方程描述或可描述为函数最小化问题的数值技术。<br>将感兴趣的区域表示为有限元的集合，有限元中的近似函数是根据所求的节点值确定的，将连续问题转化为节点值未知的离散有限元问题，有限元区域内的值可以用节点恢复。<br>对以下ODE问题：<br>$$a\frac{d^2u}{dx^2}+b&#x3D;0$$<br>有初边值条件：<br>$$\begin{cases}<br>u|<em>{x&#x3D;0}&#x3D;0\<br>a\frac{du}{dx}|</em>{x&#x3D;2l}&#x3D;0<br>\end{cases}$$</p>
+<h1 id="1-2-有限元法"><a href="#1-2-有限元法" class="headerlink" title="1.2 有限元法"></a>1.2 有限元法</h1><p>有限元法本质是一种用于解决偏微分方程描述或可描述为函数最小化问题的数值技术。<br>将感兴趣的区域表示为有限元的集合，有限元中的近似函数是根据所求的节点值确定的，将连续问题转化为节点值未知的离散有限元问题，有限元区域内的值可以用节点恢复。<br>对以下ODE问题：<br>$$a\frac{d^2u}{dx^2}+b&#x3D;0$$<br>有初边值条件：<br>$$\begin{cases}<br>u|_{x&#x3D;0}&#x3D;0\\<br>a\frac{du}{dx}|_{x&#x3D;2l}&#x3D;0<br>\end{cases}$$</p>
 
   </div>
   
@@ -2865,7 +2865,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateModified" datetime="2025-11-27T23:25:47+08:00">
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2025-11-27T23:28:00+08:00">
   <a class='notlink'>
     <i class="fa-solid fa-edit fa-fw" aria-hidden="true"></i>
     <p>更新于：2025年11月27日</p>
@@ -2960,6 +2960,11 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   
     <div class="prev-next">
+      
+        <a class='prev' href='/2025/11/28/rk3588_video/'>
+          <p class='title'><i class="fa-solid fa-chevron-left" aria-hidden="true"></i>RK3588边缘计算芯片连接使用摄像头教程</p>
+          <p class='content'>采用的是正点原子店里买的RK3588带显示屏的板子，买来的时候已经装好了linux buildroot系统，我重新烧录过ubuntu的试过，但是他们店里提供的ubuntu烧录的版本缺少太多东西，...</p>
+        </a>
       
       
         <a class='next' href='/2025/10/31/offline_env001/'>
@@ -3063,7 +3068,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <div class="webinfo-item">
           <div>文章数目：</div>
-          <div>6 篇</div>
+          <div>7 篇</div>
         </div>
       
 
@@ -3078,7 +3083,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <div class="webinfo-item">
           <div>本站总字数：</div>
-          <div>2.2k 字</div>
+          <div>4k 字</div>
         </div>
       
 
@@ -3106,7 +3111,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <div class="webinfo-item">
           <div>最后活动时间：</div>
-          <div id="last-update-show">2025-11-27 日</div>
+          <div id="last-update-show">2025-11-28 日</div>
         </div>
       
     </div>
@@ -3161,7 +3166,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
           <li><a class="flat-box"
             title="/categories/%E9%A1%B9%E7%9B%AE/" href="/categories/%E9%A1%B9%E7%9B%AE/"
             active-action="action-categoriesE9A1B9E79BAE"
-            ><div class='name'>项目</div><div class='badge'>(1)</div></a></li>
+            ><div class='name'>项目</div><div class='badge'>(2)</div></a></li>
         
       </ul>
     </div>
@@ -3186,7 +3191,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 
     <div class='content'>
-      <a href="/tags/Biot/" style="font-size: 14px; color: #999">Biot</a> <a href="/tags/FEM/" style="font-size: 14px; color: #999">FEM</a> <a href="/tags/PINN/" style="font-size: 24px; color: #555">PINN</a> <a href="/tags/ansys/" style="font-size: 14px; color: #999">ansys</a> <a href="/tags/neural-network/" style="font-size: 24px; color: #555">neural network</a> <a href="/tags/%E5%A4%9A%E5%9C%BA%E8%80%A6%E5%90%88/" style="font-size: 14px; color: #999">多场耦合</a> <a href="/tags/%E5%B7%A5%E7%A8%8B%E9%A1%B9%E7%9B%AE/" style="font-size: 24px; color: #555">工程项目</a> <a href="/tags/%E6%95%B0%E5%80%BC%E5%88%86%E6%9E%90/" style="font-size: 14px; color: #999">数值分析</a> <a href="/tags/%E6%95%B0%E5%80%BC%E8%AE%A1%E7%AE%97/" style="font-size: 14px; color: #999">数值计算</a> <a href="/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/" style="font-size: 14px; color: #999">机器学习</a> <a href="/tags/%E6%A1%A5%E6%A2%81%E6%96%BD%E5%B7%A5%E6%A8%A1%E6%8B%9F/" style="font-size: 14px; color: #999">桥梁施工模拟</a>
+      <a href="/tags/Biot/" style="font-size: 14px; color: #999">Biot</a> <a href="/tags/FEM/" style="font-size: 14px; color: #999">FEM</a> <a href="/tags/PINN/" style="font-size: 19px; color: #777">PINN</a> <a href="/tags/ansys/" style="font-size: 14px; color: #999">ansys</a> <a href="/tags/neural-network/" style="font-size: 19px; color: #777">neural network</a> <a href="/tags/rk3588/" style="font-size: 14px; color: #999">rk3588</a> <a href="/tags/%E5%A4%9A%E5%9C%BA%E8%80%A6%E5%90%88/" style="font-size: 14px; color: #999">多场耦合</a> <a href="/tags/%E5%B7%A5%E7%A8%8B%E9%A1%B9%E7%9B%AE/" style="font-size: 24px; color: #555">工程项目</a> <a href="/tags/%E6%95%B0%E5%80%BC%E5%88%86%E6%9E%90/" style="font-size: 14px; color: #999">数值分析</a> <a href="/tags/%E6%95%B0%E5%80%BC%E8%AE%A1%E7%AE%97/" style="font-size: 14px; color: #999">数值计算</a> <a href="/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/" style="font-size: 14px; color: #999">机器学习</a> <a href="/tags/%E6%A1%A5%E6%A2%81%E6%96%BD%E5%B7%A5%E6%A8%A1%E6%8B%9F/" style="font-size: 14px; color: #999">桥梁施工模拟</a> <a href="/tags/%E8%BE%B9%E7%BC%98%E8%AE%A1%E7%AE%97/" style="font-size: 14px; color: #999">边缘计算</a>
     </div>
   </section>
 
@@ -4271,7 +4276,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
 </script>
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"余翔洋的个人主页","url":"https://yuxiangyang.cn/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"余翔洋(Young)","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://yuxiangyang.cn/","sameAs":["https://github.com/volantis-x"],"description":"分享我在岩土计算与AI融合方向的研究与思考"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://yuxiangyang.cn/","name":"余翔洋的个人主页"}},{"@type":"ListItem","position":2,"item":{"@id":"https://yuxiangyang.cn/categories/有限元学习笔记/","name":"有限元学习笔记"}},{"@type":"ListItem","position":3,"item":{"@id":"https://yuxiangyang.cn/2025/11/10/FEM_note1/","name":"有限元学习笔记01"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"余翔洋的个人主页","url":"https://yuxiangyang.cn/","keywords":["岩土工程","物理信息神经网络","PINN","数值计算","机器学习"],"description":"分享我在岩土计算与AI融合方向的研究与思考","author":{"@type":"Person","name":"余翔洋(Young)","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://yuxiangyang.cn/","description":"分享我在岩土计算与AI融合方向的研究与思考"},"publisher":{"@type":"Organization","name":"余翔洋的个人主页","url":"https://yuxiangyang.cn/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://yuxiangyang.cn?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"有限元学习笔记01","description":"因为PINN的学习需要，所以重新捡起了有限元的学习。在本章中我们介绍一种称为分段多项式的函数，用它来近似很多通用函数，并很容易在计算机软件中实现。","inLanguage":["zh-CN","en","zh-TW","default"],"mainEntityOfPage":{"@type":"WebPage","@id":"https://yuxiangyang.cn/2025/11/10/FEM_note1/"},"author":{"@type":"Person","name":"余翔洋(Young)","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://yuxiangyang.cn/"},"publisher":{"@type":"Organization","name":"余翔洋的个人主页","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"https://yuxiangyang.cn/2025/11/10/FEM_note1/","wordCount":73,"datePublished":"2025-11-10T02:00:00.000Z","dateModified":"2025-11-27T15:25:47.350Z","articleSection":"有限元学习笔记","keywords":"FEM,数值分析","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"余翔洋的个人主页","url":"https://yuxiangyang.cn/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"余翔洋(Young)","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://yuxiangyang.cn/","sameAs":["https://github.com/volantis-x"],"description":"分享我在岩土计算与AI融合方向的研究与思考"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://yuxiangyang.cn/","name":"余翔洋的个人主页"}},{"@type":"ListItem","position":2,"item":{"@id":"https://yuxiangyang.cn/categories/有限元学习笔记/","name":"有限元学习笔记"}},{"@type":"ListItem","position":3,"item":{"@id":"https://yuxiangyang.cn/2025/11/10/FEM_note1/","name":"有限元学习笔记01"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"余翔洋的个人主页","url":"https://yuxiangyang.cn/","keywords":["岩土工程","物理信息神经网络","PINN","数值计算","机器学习"],"description":"分享我在岩土计算与AI融合方向的研究与思考","author":{"@type":"Person","name":"余翔洋(Young)","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://yuxiangyang.cn/","description":"分享我在岩土计算与AI融合方向的研究与思考"},"publisher":{"@type":"Organization","name":"余翔洋的个人主页","url":"https://yuxiangyang.cn/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://yuxiangyang.cn?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"有限元学习笔记01","description":"因为PINN的学习需要，所以重新捡起了有限元的学习。在本章中我们介绍一种称为分段多项式的函数，用它来近似很多通用函数，并很容易在计算机软件中实现。","inLanguage":["zh-CN","en","zh-TW","default"],"mainEntityOfPage":{"@type":"WebPage","@id":"https://yuxiangyang.cn/2025/11/10/FEM_note1/"},"author":{"@type":"Person","name":"余翔洋(Young)","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://yuxiangyang.cn/"},"publisher":{"@type":"Organization","name":"余翔洋的个人主页","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"https://yuxiangyang.cn/2025/11/10/FEM_note1/","wordCount":73,"datePublished":"2025-11-10T02:00:00.000Z","dateModified":"2025-11-27T15:28:00.472Z","articleSection":"有限元学习笔记","keywords":"FEM,数值分析","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
 
 
 
